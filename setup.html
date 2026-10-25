@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HCM Lite | Setup</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+  <main class="auth-shell">
+    <section class="auth-card wide">
+      <a class="back-link" href="index.html">← Back to login</a>
+      <div class="brand-mark">H</div><p class="eyebrow">GET STARTED</p>
+      <h1>Set up your company</h1><p class="muted">Create the first administrator account. This setup is saved in this browser.</p>
+      <form id="setupForm" class="form-grid">
+        <div class="field span-2"><label for="companyName">Company name</label><input id="companyName" required placeholder="e.g. Bright Future Ltd."></div>
+        <div class="field"><label for="adminName">Admin full name</label><input id="adminName" required placeholder="Full name"></div>
+        <div class="field"><label for="adminUsername">Admin username</label><input id="adminUsername" required placeholder="e.g. admin"></div>
+        <div class="field"><label for="adminPassword">Password</label><input id="adminPassword" type="password" minlength="4" required placeholder="At least 4 characters"></div>
+        <div class="field"><label for="confirmPassword">Confirm password</label><input id="confirmPassword" type="password" minlength="4" required></div>
+        <div class="span-2"><button class="btn primary full" type="submit">Create company and admin</button><p id="setupMessage" class="message"></p></div>
+      </form>
+      <p class="tiny">Note: localStorage is for this beginner demo, not secure production authentication.</p>
+    </section>
+  </main>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script>
+</body></html>

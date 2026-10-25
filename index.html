@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCM Lite | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="auth-card">
+      <div class="brand-mark">H</div>
+      <p class="eyebrow">HUMAN CAPITAL MANAGEMENT</p>
+      <h1>Welcome to HCM Lite</h1>
+      <p class="muted">A simple HR management app for admins and employees.</p>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input id="username" autocomplete="username" placeholder="Enter username" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="Enter password" required>
+        <button class="btn primary full" type="submit">Sign in</button>
+        <p id="loginMessage" class="message" aria-live="polite"></p>
+      </form>
+      <div class="demo-box">
+        <strong>First time here?</strong>
+        <p>Create the company and admin account on the setup page.</p>
+        <a href="setup.html">Open first-time setup →</a>
+      </div>
+      <p class="tiny">Demo project · HTML, CSS, JavaScript and localStorage</p>
+    </section>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

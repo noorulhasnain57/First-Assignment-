@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HCM Lite | Admin</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="side-brand" href="admin.html"><span class="brand-mark small">H</span><span>HCM <b>Lite</b></span></a>
+      <p class="nav-label">WORKSPACE</p>
+      <a class="nav-link active" href="admin.html">▦ Dashboard</a><a class="nav-link" href="employees.html">♙ Employees</a><a class="nav-link" href="leaves.html">◷ Leave requests</a><a class="nav-link" href="settings.html">⚙ Settings</a>
+      <div class="sidebar-bottom"><p class="tiny">Beginner Track Project</p><button class="btn ghost full" data-logout>Sign out ↗</button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div><p class="eyebrow">OVERVIEW</p><h1>Admin dashboard</h1><p class="muted" id="welcomeText">Manage your team and attendance.</p></div><div class="top-actions"><span class="date-pill" id="todayLabel"></span><span class="avatar" id="adminAvatar">A</span></div></header>
+      <section class="stat-grid">
+        <article class="stat-card"><div class="stat-icon purple">♙</div><p>Total employees</p><strong id="totalEmployees">0</strong><span class="stat-note">Registered team members</span></article>
+        <article class="stat-card"><div class="stat-icon green">✓</div><p>Present today</p><strong id="presentCount">0</strong><span class="stat-note">Checked in today</span></article>
+        <article class="stat-card"><div class="stat-icon orange">◷</div><p>Late today</p><strong id="lateCount">0</strong><span class="stat-note">Past grace period</span></article>
+        <article class="stat-card"><div class="stat-icon blue">▤</div><p>Pending leaves</p><strong id="pendingCount">0</strong><span class="stat-note">Need your review</span></article>
+      </section>
+      <section class="content-grid">
+        <article class="panel"><div class="panel-heading"><div><h2>Today's attendance</h2><p class="muted">Latest employee check-ins</p></div><a class="text-link" href="employees.html">Manage employees →</a></div><div class="table-wrap"><table><thead><tr><th>Employee</th><th>Department</th><th>Check-in</th><th>Status</th></tr></thead><tbody id="attendanceTable"></tbody></table></div></article>
+        <article class="panel"><div class="panel-heading"><div><h2>Smart helper</h2><p class="muted">Ask about your company data</p></div><span class="helper-badge">AI touch</span></div><div class="chat-log" id="adminChat"><div class="bot-bubble">Hi! Ask me how many employees you have, who is on leave, or who was late today.</div></div><form id="adminHelperForm" class="chat-form"><input id="adminQuestion" placeholder="Ask a question..." required><button class="btn primary" type="submit">Send</button></form></article>
+      </section>
+      <section class="panel quick-panel"><div><h2>Quick actions</h2><p class="muted">Keep your HR work moving.</p></div><div class="quick-actions"><a class="quick-action" href="employees.html"><span>＋</span><b>Add employee</b><small>Create employee login</small></a><a class="quick-action" href="leaves.html"><span>✓</span><b>Review leaves</b><small>Approve or reject requests</small></a><a class="quick-action" href="settings.html"><span>⚙</span><b>Company settings</b><small>Update work rules</small></a></div></section>
+      <footer>HCM Lite · Hackathon Beginner Track <span>Data stored in this browser</span></footer>
+    </main>
+  </div>
+  <script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/app.js"></script>
+</body></html>
